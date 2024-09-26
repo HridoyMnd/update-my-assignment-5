@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ section</title>
+    <!-- fontawesome cdn link -->
+    <script src="https://kit.fontawesome.com/4c236feb5b.js" crossorigin="anonymous"></script>
+    <!-- google font cdn link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- lexend font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- daisy UI + tailwind css cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-bodyFont">
+
+    <!-- header section markup -->
+    <header class="sticky top-0 z-10 backdrop-blur-lg bg-yellow-50 bg-opacity-50 py-4">
+        <!-- navbar section markup -->
+         <div class="w-10/12 mx-auto">
+          <div class="navbar justify-between">
+            <div class="">
+            <a class= "" href="index.html"><button class="btn bg-btnBack text-xl font-semibold hover:bg-btnBack sm:block hidden">Home</button></a>
+              <span><a href="index.html"><i class="fa-solid fa-bars sm:hidden block text-2xl font-bold"></i></a></span>
+            </div>
+          
+            <div class="">
+              <a class=" flex gap-3">
+                <img src="assets/images/logo.png " class="max-w-[30px] hidden sm:block " alt="token">
+                <h3 class="text-base sm:text-xl font-semibold">Donate Bangladesh</h3>
+              </a>
+            </div>
+          
+            <div class="">
+              <span class="sm:text-xl text-base font-medium text-paraClr flex">
+                <img src="assets/images/coin.png" alt="">
+                <h3 class="sm:ml-2 ml-0 mr-1" id="my-amount">10000.00</h3>
+                <span>BDT</span>
+              </span>
+            </div>
+          </div>
+         </div>
+    </header>
+    <!-- main section markup -->
+     <main class="w-10/12 mx-auto my-10">
+      <h2 class="sm:text-3xl text-2xl font-extrabold text-headingClr">Important FAQ <span><i class="fa-regular fa-circle-question"></i></span></h2>
+      <!-- question section -->
+      <div class="mt-5">
+        <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-lg">
+          <div class="collapse-title sm:text-xl text-base font-semibold">
+            <h3>What is Document Object Model (DOM) ?</h3>
+          </div>
+          <div class="collapse-content sm:text-lg text-sm">
+            <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content</p>
+          </div>
+        </div>
+      
+        <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-lg mt-4">
+          <div class="collapse-title sm:text-xl text-base font-semibold">
+            <h3>How can you select an element from the DOM ?</h3>
+          </div>
+          <div class="collapse-content sm:text-lg text-sm">
+            <p>I can use a variety of methods provided by the document object model for select dom element. For example: getElementById(), getElementsByClassName(), getElementsTagName(), querySelector(), querySelectorAll() etc.</p>
+          </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-lg mt-4">
+          <div class="collapse-title sm:text-xl text-base font-semibold">
+            <h3>What is the event delegation in the context of DOM and why it is useful ?</h3>
+          </div>
+          <div class="collapse-content sm:text-lg text-sm">
+            <p>Event delegation is a powerful technique in JavaScript where a single event listener is attached to a parent element to manage events triggered by its child elements.</p>
+          </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-lg mt-4">
+          <div class="collapse-title sm:text-xl text-base font-semibold">
+            <h3>How do you manipulate an elements attributes and styles using the DOM ?</h3>
+          </div>
+          <div class="collapse-content sm:text-lg text-sm">
+            <p>I can use various methods and properties to manipulate an element attributes and styles like getAttribute(), setAttribute(), removeAttribute() etc.</p>
+          </div>
+        </div>
+      </div>
+     </main>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

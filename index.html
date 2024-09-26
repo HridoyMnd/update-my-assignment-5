@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Assignment 5</title>
+    <!-- fontawesome cdn link -->
+    <script src="https://kit.fontawesome.com/4c236feb5b.js" crossorigin="anonymous"></script>
+    <!-- google font cdn link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- lexend font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- daisy UI + tailwind css cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="font-bodyFont">
+      <!-- heading section markup -->
+      <header class="sticky top-0 z-10 backdrop-blur-lg ">
+        <!-- navbar section markup -->
+        <div class="bg-yellow-50 bg-opacity-50 p-4">
+          <div class="navbar justify-between w-10/12 mx-auto">
+            <!-- navbar left -->
+            <div class="left">
+            <a href="index2.html"><button class="btn bg-btnBack text-xl font-semibold hover:bg-btnBack sm:block hidden">Blog</button></a>
+              <span><a href="index2.html"><i class="fa-solid fa-bars sm:hidden block text-2xl font-bold"></i></a></span>
+            </div>
+          
+            <div class="middle">
+              <a class=" flex gap-3">
+                <img src="assetes/images/logo.png " class="max-w-[30px] hidden sm:block " alt="token">
+                <h3 class="text-base sm:text-xl font-semibold">Donate Bangladesh</h3>
+              </a>
+            </div>
+          
+            <div class="right">
+              <span class="sm:text-xl text-base font-medium text-paraClr flex">
+                <img src="assetes/images/coin.png" alt="">
+                <h3 class="sm:ml-2 ml-0 mr-1" id="my-amount">10000.00</h3>
+                <span>BDT</span>
+              </span>
+            </div>
+          </div>
+         </div>
+         <!-- navbar button section markup -->
+          <div class="sm:mt-8 mt-4 flex justify-center gap-4">
+            <button id="donation-button" onclick="showBtnBack('donation-button', 'donation-history-button'); showPages('page1', 'page2')"
+            class="px-6 py-2 text-headingClr text-xl rounded-lg bg-btnBack">
+            Donation
+          </button>
+          <button id="donation-history-button" onclick="showBtnBack('donation-history-button', 'donation-button'); showPages('page2', 'page1')"
+          class="px-6 py-2 text-headingClr text-xl rounded-lg bg-gray-200">
+          History
+        </button>
+          </div>
+       </header>
+
+        <!-- pages section -->
+        <section id="page1">
+              <!-- donated amount -->
+              <h3 id="donated-amount">200</h3>
+              <!-- donate title -->
+              <h3 id="donate-title">Donate for Flood at Noakhali, Bangladesh</h3>
+              <!-- donate inputfield -->
+              <input placeholder="write your donation" id="donate-input" class="border border-black">
+              <!-- donate button -->
+              <button onclick="commonFunction('donate-input', 'donated-amount', 'donate-title')" class=" border rounded-lg px-3 py-1 border-black">Donate Now</button>
+              <!-- other-section -->
+              <h3 id="other-donated-amount">200</h3>
+              <!-- donate title -->
+              <h3 id="other-donate-title">Donate for Flood at Khulna, Bangladesh</h3>
+              <!-- donate inputfield -->
+              <input placeholder="write your donation" id="other-donate-input" class="border border-black">
+              <!-- donate button -->
+              <button onclick="commonFunction('other-donate-input', 'other-donated-amount', 'other-donate-title')" class=" border rounded-lg px-3 py-1 border-black">Donate Now</button>
+      </section>
+
+      <!-- second page markup -->
+      <section>
+        <div id="page2" class="hidden">
+          <div id="history-container" class="mt-5 space-y-2 w-10/12 mx-auto"></div>
+        </div>
+      </section>
+    <!--  modal  part markup-->
+    <section>        
+            <div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-20">
+             <div class="bg-white p-6 rounded-lg shadow-lg sm:w-1/4 w-1/2 text-center">
+               <h1 class="sm:text-3xl text-xl sm:font-extrabold font-bold">Congrates</h1>
+               <h5>You have donated for humankind</h5>
+               <h2 class="text-xl font-bold sm:my-4 my-2">Successfully</h2>
+               <button class="btn sm:px-6 px-3 sm:text-xl text-base font-medium" id="confirm-btn" onclick="showModal()">Close confirmation</button>
+              </div>
+            </div>
+    </section>
+ <script src="assetes/js/script.js"></script>
+</body>
+</html>
